@@ -1,0 +1,211 @@
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.layout-nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.layout-nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.layout-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.layout-nav-link {
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+}
+
+.layout-nav-link:hover {
+  opacity: 0.8;
+}
+
+.layout-nav-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.layout-user-greeting {
+  color: #ecf0f1;
+  white-space: nowrap;
+}
+
+.layout-logout-btn {
+  padding: 0.5rem 1rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.layout-logout-btn:hover {
+  background: #c0392b;
+}
+
+.layout-login-btn {
+  padding: 0.5rem 1rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.layout-login-btn:hover {
+  background: #2980b9;
+}
+
+.layout-register-btn {
+  padding: 0.5rem 1rem;
+  background: #2ecc71;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.layout-register-btn:hover {
+  background: #27ae60;
+}
+
+.layout-main {
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.layout-footer {
+  background: #34495e;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .layout-main {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .layout-header {
+    padding: 1rem;
+  }
+
+  .layout-nav {
+    gap: 1rem;
+  }
+
+  .layout-nav-links {
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .layout-logo {
+    font-size: 1.25rem;
+  }
+
+  .layout-nav-link {
+    font-size: 0.9rem;
+  }
+
+  .layout-nav-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .layout-main {
+    padding: 1rem;
+  }
+
+  .layout-user-greeting {
+    font-size: 0.85rem;
+  }
+
+  .layout-logout-btn,
+  .layout-login-btn,
+  .layout-register-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .layout-header {
+    padding: 0.75rem;
+  }
+
+  .layout-nav {
+    gap: 0.75rem;
+  }
+
+  .layout-nav-links {
+    gap: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .layout-logo {
+    font-size: 1.1rem;
+  }
+
+  .layout-nav-link {
+    font-size: 0.85rem;
+  }
+
+  .layout-main {
+    padding: 0.75rem;
+  }
+
+  .layout-footer {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1600px) {
+  .layout-nav {
+    max-width: 1600px;
+  }
+
+  .layout-main {
+    max-width: 1600px;
+  }
+}

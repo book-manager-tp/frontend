@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { api } from '@/lib/api';
+import { authApi } from '@/lib/api';
 
 export const VerifyEmail = () => {
   const { token } = useParams<{ token: string }>();
@@ -17,7 +17,7 @@ export const VerifyEmail = () => {
       }
 
       try {
-        const response = await api(`/verify-email/${token}`);
+        const response = await authApi.verifyEmail(token);
         setStatus('success');
         setMessage(response.message || 'Email verificado exitosamente');
         

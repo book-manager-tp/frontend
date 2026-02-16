@@ -1,6 +1,6 @@
 import { Layout } from '@/components/Layout';
 import { ProtectedRoute } from '@/components/ProtectedRoute';
-import { BookDetail, BookForm, Books, Home, Login, Register } from '@/screens';
+import { BookDetail, BookForm, Books, Home, Login, Register, VerifyEmail } from '@/screens';
 import { CategoryBooks } from '@/screens/CategoryBooks';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -26,6 +26,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Register />
+      </Layout>
+    ),
+  },
+  {
+    path: '/verify-email/:token',
+    element: (
+      <Layout>
+        <VerifyEmail />
       </Layout>
     ),
   },

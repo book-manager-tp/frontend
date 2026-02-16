@@ -1,0 +1,16 @@
+:$PORT {
+    root * /app/dist
+    encode gzip
+    
+    # Try serving files, otherwise fallback to index.html for SPA routing
+    try_files {path} /index.html
+    
+    file_server
+    
+    # Security headers
+    header {
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "DENY"
+        Referrer-Policy "no-referrer-when-downgrade"
+    }
+}

@@ -24,7 +24,7 @@ export const VerifyEmail = () => {
         // Redirigir al login después de 3 segundos
         setTimeout(() => {
           navigate('/login');
-        }, 3000);
+        }, 2000);
       } catch (error: any) {
         setStatus('error');
         setMessage(error.message || 'Error al verificar el email');

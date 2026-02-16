@@ -5,7 +5,7 @@
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 
 interface RequestOptions {
-  method: 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH';
+  method?: 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH';
   body?: unknown;
   headers?: HeadersInit;
   requiresAuth?: boolean;
